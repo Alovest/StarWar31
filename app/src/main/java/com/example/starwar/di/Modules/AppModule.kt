@@ -1,11 +1,13 @@
 package com.example.starwar.di.Modules
 
 
-import com.example.starwar.Data.Repository.GetPersonDataRepository
+import com.example.starwar.Data.Repository.GetPersonDataRepositoryImpl
+import com.example.starwar.domain.repository.GetPersonDataRepository
 import com.example.starwar.Data.Retrofit.Interface.InterfaceStarwarApi
 import com.example.starwar.Presentation.ViewModel.GetPersonDataViewModel
+import com.example.starwar.domain.usecase.GetFilmUsecase
+import com.example.starwar.domain.usecase.GetPersonUsecase
 import org.koin.androidx.viewmodel.dsl.viewModel
-import org.koin.core.context.GlobalContext.get
 import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -18,6 +20,8 @@ val appModule = module {
             .build()
             .create(InterfaceStarwarApi::class.java)
     }
-    factory { GetPersonDataRepository(get()) }
-    viewModel { GetPersonDataViewModel(get()) }
+    factory { GetPersonUsecase(get()) }
+    factory { GetFilmUsecase(get()) }
+    single<GetPersonDataRepository> { GetPersonDataRepositoryImpl(get()) }
+    viewModel { GetPersonDataViewModel(get(), get()) }
 }
