@@ -1,4 +1,4 @@
-package com.example.starwar.Data.Retrofit.Pojo
+package com.example.starwar.data.Retrofit.Pojo
 
 data class FilmsApi(
     val characters: List<String>,

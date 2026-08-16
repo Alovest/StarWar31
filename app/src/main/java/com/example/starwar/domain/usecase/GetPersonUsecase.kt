@@ -1,8 +1,7 @@
 package com.example.starwar.domain.usecase
 
-import androidx.core.app.Person
 import androidx.lifecycle.MutableLiveData
-import com.example.starwar.Data.Retrofit.Pojo.PeopleApi
+import com.example.starwar.data.Retrofit.Pojo.PeopleApi
 import com.example.starwar.domain.repository.GetPersonDataRepository
 
 class GetPersonUsecase(private val repository: GetPersonDataRepository) {

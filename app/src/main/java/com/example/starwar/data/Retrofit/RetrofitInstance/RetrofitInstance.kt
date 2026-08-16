@@ -1,6 +1,6 @@
-package com.example.starwar.Data.Retrofit.RetrofitInstance
+package com.example.starwar.data.Retrofit.RetrofitInstance
 
-import com.example.starwar.Data.Retrofit.Interface.InterfaceStarwarApi
+import com.example.starwar.data.Retrofit.Interface.InterfaceStarwarApi
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

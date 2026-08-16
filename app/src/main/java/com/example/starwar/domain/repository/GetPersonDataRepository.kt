@@ -1,8 +1,8 @@
 package com.example.starwar.domain.repository
 
-import com.example.starwar.Data.Retrofit.Interface.InterfaceStarwarApi
-import com.example.starwar.Data.Retrofit.Pojo.FilmsApi
-import com.example.starwar.Data.Retrofit.Pojo.PeopleApi
+import com.example.starwar.data.Retrofit.Interface.InterfaceStarwarApi
+import com.example.starwar.data.Retrofit.Pojo.FilmsApi
+import com.example.starwar.data.Retrofit.Pojo.PeopleApi
 
 interface GetPersonDataRepository {
     val apiService: InterfaceStarwarApi

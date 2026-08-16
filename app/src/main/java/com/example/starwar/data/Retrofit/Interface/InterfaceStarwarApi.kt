@@ -1,8 +1,7 @@
-package com.example.starwar.Data.Retrofit.Interface
+package com.example.starwar.data.Retrofit.Interface
 
-import com.example.starwar.Data.Retrofit.Pojo.FilmsApi
-import com.example.starwar.Data.Retrofit.Pojo.PeopleApi
-import retrofit2.Call
+import com.example.starwar.data.Retrofit.Pojo.FilmsApi
+import com.example.starwar.data.Retrofit.Pojo.PeopleApi
 import retrofit2.http.GET
 import retrofit2.http.Path
 

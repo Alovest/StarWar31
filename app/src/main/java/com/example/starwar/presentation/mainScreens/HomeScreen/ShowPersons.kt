@@ -1,7 +1,5 @@
-package com.example.starwar.Presentation.MainScreens.HomeScreen
+package com.example.starwar.presentation.mainScreens.HomeScreen
 
-import android.net.Uri
-import android.net.Uri.encode
 import android.util.Log
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -33,9 +31,8 @@ import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.example.starwar.Data.Retrofit.Pojo.PeopleApi
-import com.example.starwar.Presentation.ViewModel.GetPersonDataViewModel
-import org.koin.androidx.compose.koinViewModel
+import com.example.starwar.data.Retrofit.Pojo.PeopleApi
+import com.example.starwar.presentation.viewModel.GetPersonDataViewModel
 
 @Composable
 fun ShowPersons(navController: NavController, viewModel: GetPersonDataViewModel) {

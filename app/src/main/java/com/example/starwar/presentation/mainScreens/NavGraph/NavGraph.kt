@@ -1,4 +1,4 @@
-package com.example.starwar.Presentation.MainScreens.NavGraph
+package com.example.starwar.presentation.mainScreens.NavGraph
 
 import android.util.Log
 import androidx.compose.material.Text
@@ -6,17 +6,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.graphics.Color
-import androidx.core.app.NotificationCompatExtras
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.example.starwar.Data.Retrofit.Pojo.PeopleApi
-import com.example.starwar.Presentation.MainScreens.HomeScreen.PersonItem
-import com.example.starwar.Presentation.MainScreens.HomeScreen.ShowPersons
-import com.example.starwar.Presentation.MainScreens.ScreenOfCard.ScreenOfCard
-import com.example.starwar.Presentation.ViewModel.GetPersonDataViewModel
+import com.example.starwar.presentation.mainScreens.HomeScreen.ShowPersons
+import com.example.starwar.presentation.mainScreens.ScreenOfCard.ScreenOfCard
+import com.example.starwar.presentation.viewModel.GetPersonDataViewModel
 import org.koin.androidx.compose.koinViewModel
 
 @Composable

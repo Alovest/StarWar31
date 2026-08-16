@@ -1,12 +1,11 @@
-package com.example.starwar.Presentation.ViewModel
+package com.example.starwar.presentation.viewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.starwar.domain.repository.GetPersonDataRepository
-import com.example.starwar.Data.Retrofit.Pojo.FilmsApi
-import com.example.starwar.Data.Retrofit.Pojo.PeopleApi
+import com.example.starwar.data.Retrofit.Pojo.FilmsApi
+import com.example.starwar.data.Retrofit.Pojo.PeopleApi
 import com.example.starwar.domain.usecase.GetFilmUsecase
 import com.example.starwar.domain.usecase.GetPersonUsecase
 import kotlinx.coroutines.Dispatchers

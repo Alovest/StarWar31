@@ -1,4 +1,4 @@
-package com.example.starwar.Data.Retrofit.Pojo
+package com.example.starwar.data.Retrofit.Pojo
 
 data class PeopleApi(
     val birth_year: String,
